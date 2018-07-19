@@ -69,3 +69,12 @@ default :
 print(loveStatement)// victor is my best friend!
 
 
+
+let someString = "Some string literal value"
+print(someString)
+
+let myLover = "Victor"
+print(myLover)
+
+let myBestFriend = "zliang"
+print(myBestFriend)
