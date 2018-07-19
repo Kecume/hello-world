@@ -13,7 +13,7 @@ var str = "Hello, playground"
 
 
 var hp = 75
-var x = hp/10
+var x = hp/10 // 75/10=7
 if hp == 0 {
     print("you're dead!")
 } else if hp % 10 == 0 {
@@ -24,6 +24,7 @@ if hp == 0 {
     print(20)    
 }
 
+//80
 
 
 var y = 20
@@ -31,6 +32,12 @@ while y >= 10 {
     print ("Hellow,\(y)")
     x -= 2
 }
+//Hello,20
+//hello,18
+//Hello,16
+//Hello,14
+//Hello,12
+
 
 
 
@@ -45,7 +52,7 @@ default:
     desc += " an integer."
 }
 
-print(desc)
+print(desc) 1 is an essential number, and also an integer.
 
 
 
@@ -59,6 +66,6 @@ case "eva","natalie","siri" :
 default :
     loveStatement += "my best friend!"
 }
-print(loveStatement)
+print(loveStatement)// victor is my best friend!
 
 
