@@ -78,3 +78,19 @@ print(myLover)
 
 let myBestFriend = "zliang"
 print(myBestFriend)
+
+
+var emptyString = ""
+if emptyString.isEmpty {
+   print("String is empty")
+}
+
+var myString = String()
+if myString.isEmpty {
+    print("My String is Empty!")
+}
+
+var yourString = ""
+if yourString == String() {
+    print("Your String is Empty!")
+}
