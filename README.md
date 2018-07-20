@@ -143,3 +143,17 @@ print("I have \(myLunch) for lunch today.")
 myLunch.insert("Noodles", at: 0)
 
 print("Actually I have \(myLunch) for lunch today, and the last one is my favourite.")
+
+
+var shoppingList = ["Syrup", "Milk", "Apples"]
+let apples = shoppingList.removeLast()
+print(apples)
+print(shoppingList)
+
+
+var allMyExBoyfriend = ["Sam", "Mike", "Jose", "Evan"]
+
+let evan = allMyExBoyfriend.removeLast()
+
+print(evan)
+print(allMyExBoyfriend)
