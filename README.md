@@ -94,3 +94,52 @@ var yourString = ""
 if yourString == String() {
     print("Your String is Empty!")
 }
+
+
+
+var shoppingList = ["Bread", "Milk"]
+print("The shopping list contains \(shoppingList.count) items.")
+
+
+
+var shoppingList = ["Bread", "Milk"]
+if shoppingList.isEmpty {
+   print("The shopping list is empty.")
+} else {
+   print("The shopping list is not empty.")
+}
+// prints "The shopping list is not empty."
+
+
+var shoppingList = ["Bread", "Milk"]
+shoppingList.append("Flour")
+print(shoppingList)
+
+
+
+var shoppingList = ["Bread", "Milk"]
+shoppingList[0] = "Two apples"
+print(shoppingList)
+
+
+
+var shoppingList = ["Syrup", "Bread", "Milk", "Apples"]
+print("Before: \(shoppingList)")
+shoppingList[1...3] = ["Bananas", "Oranges"]
+print("After: \(shoppingList)")
+
+
+
+var shoppingList = ["Bread", "Milk"]
+print("Before: \(shoppingList)")
+shoppingList.insert("Syrup", at: 0)
+print("After: \(shoppingList)")
+
+
+var myLunch = ["Soup", "Egg Bread", "Honey Tomato"]
+
+print("I have \(myLunch) for lunch today.")
+
+myLunch.insert("Noodles", at: 0)
+
+print("Actually I have \(myLunch) for lunch today, and the last one is my favourite.")
