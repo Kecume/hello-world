@@ -160,7 +160,33 @@ print(allMyExBoyfriend)
 
 
 
+
+var shoppingList = ["Syrup", "Milk"]
+print("Before: \(shoppingList)")
+let syrup = shoppingList.remove(at:0)
+print("After: \(shoppingList)")
+
+
+
 var shoppingList = ["Bread", "Milk", "Syrup", "Apples"]
 for item in shoppingList {
     print(item)
 }
+
+
+
+
+
+var shoppingList = ["Bread", "Milk", "Syrup", "Apples"]
+for (index, value) in shoppingList.enumerated() {
+    print("Item \(index + 1): \(value)")
+}
+
+
+
+var carList = ["Toyota", "Mazda", "Honda", "Ghblic", "Tesla"]
+for (index, value) in carList.enumerated() {
+    print("Item \(index + 1): \(value)")
+}
+
+
