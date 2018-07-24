@@ -190,3 +190,34 @@ for (index, value) in carList.enumerated() {
 }
 
 
+
+
+var letters = Set<Character>()
+print(letters)
+
+
+var strings = Set<String>()
+print(strings)
+
+var studentName = Set<Use>()
+print(studentName)
+
+
+
+
+var names: Set<String> = ["David", "Susan", "Robert"]
+print(names)
+
+
+var books: Set<String> = ["Be an artist", "Stranger", "Yourselft"]
+print(books)
+    
+    
+    
+var names: Set = ["David", "Susan", "Robert"]
+print(names)
+
+var numbers: Set = [1, 50, 3]
+print(numbers)
+
+
