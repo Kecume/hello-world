@@ -299,3 +299,54 @@ let basketRight: Set = ["Orange", "Grape", "Cherries"]
 print("The left basket contains \(basketLeft)")
 print("The right basket contains \(basketRight)")
 print("Both baskets contains \(basketLeft.union(basketRight).sorted())")
+
+
+
+
+
+
+
+
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+
+print("Set 1 contains \(oddDigits)")
+print("Set 2 contains \(evenDigits)")
+print("Union of the two sets will contain")
+print(oddDigits.union(evenDigits).sorted())
+
+/*
+Set 1 contains [5, 7, 3, 1, 9]
+Set 2 contains [6, 2, 0, 4, 8]
+Union of the two sets will contain
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+*/
+
+
+
+var basketLeft: Set = ["Apple", "Pear", "Orange", "Watermelon", "Peach"]
+var basketRight: Set = ["Orange", "Grape", "Cherries", "Apple"]
+
+print("The left basket contains \(basketLeft.count) fruits. They are \(basketLeft.sorted())")
+
+print("The right basket contains \(basketRight.count) fruits. They are \(basketRight.sorted()).")
+
+print("There are \(basketLeft.union(basketRight).sorted()) in the baskets.")
+
+print("Both baskets contains \(basketLeft.intersection(basketRight)), There have \(basketRight.symmetricDifference(basketLeft)) which the items the two baskets have not in commom.")
+
+print("\(basketLeft.subtract(basketRight))")  // ??????????????????????????????????????
+
+/*
+Set 1 contains [5, 7, 3, 1, 9]
+Set 2 contains [6, 2, 0, 4, 8]
+Union of the two sets will contain
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+The left basket contains 5 fruits. They are ["Apple", "Orange", "Peach", "Pear", "Watermelon"]
+The right basket contains 4 fruits. They are ["Apple", "Cherries", "Grape", "Orange"].
+There are ["Apple", "Cherries", "Grape", "Orange", "Peach", "Pear", "Watermelon"] in the baskets.
+Both baskets contains ["Orange", "Apple"], There have ["Pear", "Grape", "Cherries", "Watermelon", "Peach"] which the items the two baskets have not in commom.
+()
+*/
+
+print("\(basketLeft.subtract(basketRight))")
