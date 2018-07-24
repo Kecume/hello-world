@@ -221,3 +221,81 @@ var numbers: Set = [1, 50, 3]
 print(numbers)
 
 
+
+var names: Set = ["David", "Susan", "Robert"]
+print("Before: \(names)")
+names.insert("Paul")
+print("After: \(names)")
+
+
+var numbers: Set = [1, 2, 3, 4, 5]
+print("There have \(numbers.count) numbers. Ther are \(numbers).")
+numbers.insert(20)
+print("Now there have \(numbers.count) numbers. They are \(numbers).")
+
+
+
+
+var names: Set = ["David", "Susan", "Robert"]
+if names.contains("James") {
+    print("James is here.")
+} else {
+    print("James is not with us.")
+}
+
+
+var magazines: Set = ["Milk", "Ceal", "IdN", "The Little Things"]
+if magazines.contains("IdN") {
+    print("I have one IdN magazine and it's my favorite.")
+} else {
+    print("I don't have any IdN here right now.")
+}
+
+
+
+
+
+
+var names: Set = ["David", "Susan", "Robert"]
+for name in names {
+   print("\(name)")
+}
+
+
+var colleagues: Set = ["Miya", "Lori", "Cayi" , "Jane", "Lee"]
+for colleague in colleagues {
+    print("\(colleague)")
+}
+
+
+
+var names: Set = ["David", "Susan", "Robert"]
+for name in names.sorted() {
+   print("\(name)")
+}
+
+
+var food: Set = ["Eggs", "Cakes", "Cherries", "Cauliflower"]
+for food in food.sorted() {
+    print("\(food)")
+}
+
+
+
+
+
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+
+print("Set 1 contains \(oddDigits)")
+print("Set 2 contains \(evenDigits)")
+print("Union of the two sets will contain")
+print(oddDigits.union(evenDigits).sorted())
+
+
+let basketLeft: Set = ["Apple", "Pear", "Orange", "Watermelon"]
+let basketRight: Set = ["Orange", "Grape", "Cherries"]
+
+print("The left basket contains \(basketLeft)")
+print("The right basket contains \(basketRight)")
+print("Both baskets contains \(basketLeft.union(basketRight).sorted())")
