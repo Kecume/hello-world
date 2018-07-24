@@ -447,6 +447,29 @@ Group 1 and 2 both have [0, 1, 3]
 
 
 
+var box1: Set = ["Milk", "Orange", "Bananna", "Apple", "Eggs"]
+var box2: Set = ["Eggs", "Pear", "Peach", "Bananna", "Orange", "IdN", "Bag", "Pencil", "Milk", "Apple"]
+
+if box1 == box2 {
+    print("Box1 and box2 have the same stuff inside.")
+} else if box2.isStrictSuperset(of: box1) {
+        print("There have \(box2.count) items in box2. They are \(box2) .Box1 has less stuff than box2. Two boxes both have \(box1.intersection(box2))")
+} else if box1.isStrictSubset(of: box2) {
+        print("Box1 must has less stuff than box2. There have \(box1.count) items inside and they are\(box1).")
+} else if box1.isSubset(of: box2) {
+        print("Box2 has more stuff inside than box1, also has \(box1.subtract(box2)) which box1 does not has.")
+} else if box1.isDisjoint(with: box2) {
+        print("There is no common among box1 and box2.")
+}        
+
+
+
+
+
+
+
+
+
 
 
 
