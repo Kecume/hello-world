@@ -350,3 +350,107 @@ Both baskets contains ["Orange", "Apple"], There have ["Pear", "Grape", "Cherrie
 */
 
 print("\(basketLeft.subtract(basketRight))")
+
+
+
+
+
+
+
+
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+
+print("Set 1 contains \(oddDigits)")
+print("Set 2 contains \(evenDigits)")
+print("Union of the two sets will contain")
+print(oddDigits.union(evenDigits).sorted())
+
+
+/*
+Set 1 contains [5, 7, 3, 1, 9]
+Set 2 contains [6, 2, 0, 4, 8]
+Union of the two sets will contain
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+*/
+
+
+let numGroupA: Set = [1, 20, 16, 3, 9, 41, 0]
+let numGroupB: Set = [0, 1, 3, 6, 8, 21, 50]
+
+print("Group 1 contains \(numGroupA)")
+print("Group 2 contains \(numGroupB)")
+print("Union of the two sets will contain.")
+print(numGroupA.union(numGroupB).sorted())
+print(numGroupA.symmetricDifference(numGroupB).sorted())
+print("Group 1 and 2 both have \(numGroupA.intersection(numGroupB).sorted()).")
+
+/*
+Group 1 contains [16, 41, 20, 9, 3, 1, 0]
+Group 2 contains [8, 21, 6, 50, 0, 1, 3]
+Union of the two sets will contain
+[0, 1, 3, 6, 8, 9, 16, 20, 21, 41, 50]
+[6, 8, 9, 16, 20, 21, 41, 50]
+Group 1 and 2 both have [0, 1, 3]
+*/
+
+
+
+var basketLeft: Set = ["Apple", "Pear", "Orange", "Watermelon", "Peach"]
+var basketRight: Set = ["Orange", "Grape", "Cherries", "Apple"]
+
+print("The left basket contains \(basketLeft.count) fruits. They are \(basketLeft.sorted())")
+
+print("The right basket contains \(basketRight.count) fruits. They are \(basketRight.sorted()).")
+
+print("There are \(basketLeft.union(basketRight).sorted()) in the baskets.")
+
+print("Both baskets contains \(basketLeft.intersection(basketRight)), There have \(basketRight.symmetricDifference(basketLeft)) which the items the two baskets have not in commom.")
+
+print(basketLeft.union(basketRight))
+
+print("\(basketRight.subtract(basketLeft))")  // ??????????????????????????????????????
+
+/*
+Set 1 contains [5, 7, 3, 1, 9]
+Set 2 contains [6, 2, 0, 4, 8]
+Union of the two sets will contain
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+The left basket contains 5 fruits. They are ["Apple", "Orange", "Peach", "Pear", "Watermelon"]
+The right basket contains 4 fruits. They are ["Apple", "Cherries", "Grape", "Orange"].
+There are ["Apple", "Cherries", "Grape", "Orange", "Peach", "Pear", "Watermelon"] in the baskets.
+Both baskets contains ["Orange", "Apple"], There have ["Pear", "Grape", "Cherries", "Watermelon", "Peach"] which the items the two baskets have not in commom.
+()
+*/
+
+var threeDoubles = [Double] (repeating: 3, count: 4)
+var anotherThreeDoubles = [Double] (repeating: 2.5, count: 3)
+var sixDoubles = threeDoubles + anotherThreeDoubles
+print(sixDoubles)
+
+/*
+Group 1 contains [16, 41, 20, 9, 3, 1, 0]
+Group 2 contains [8, 21, 6, 50, 0, 1, 3]
+Union of the two sets will contain
+[0, 1, 3, 6, 8, 9, 16, 20, 21, 41, 50]
+[6, 8, 9, 16, 20, 21, 41, 50]
+Group 1 and 2 both have [0, 1, 3]
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
