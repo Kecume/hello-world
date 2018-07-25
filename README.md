@@ -540,3 +540,43 @@ print(airportName)
 var magazines = ["I": "IdN", "M": "Milk", "T": "The Little Things"]
 let myFavoriteMagazine = magazines["I"]
 print(myFavoriteMagazine)
+
+
+
+
+
+var airports = ["TOR": "Toronto", "NY": "New York"]
+airports["LHR"] = "London"
+airports["APL"] = "Apple"
+airports["APL"] = nil
+print(airports)
+
+
+var myShoes = ["H": "Highheels", "B": "Boots", "S": "Slippers", "F": "Flat"]
+myShoes["F"] = "Flattie"
+myShoes["SN"] = "Sneaker"
+print("Before: \(myShoes), \(myShoes.count)")
+myShoes["SN"] = nil
+print("After:\(myShoes), \(myShoes.count)")
+
+
+
+
+
+
+
+var airports = ["TOR": "Toronto", "NY": "New York"]
+if let removedValue = airports.removeValue(forKey: "NY") {
+   print("The removed airport's name is \(removedValue).")
+} else {
+   print("The airports dictionary does not contain a value for NY.")
+}
+
+
+
+var myExBoyfriend = ["D": "Deng", "M": "Ming", "G": "Gui", "Z": "Zi"]
+if let removedValue = myExBoyfriend.removeValue(forKey: "Z") {
+    print("Zi is now my husband, and he is not my boy friend anymore.")
+} else {
+    print("I don't know Zi.")
+}    
