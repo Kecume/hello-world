@@ -529,3 +529,14 @@ let oldvalue3 = shoppingList.updateValue("Cherries", forKey: "Che")
 print("After: \(shoppingList)")
 
 
+
+
+var airports = ["TOR": "Toronto", "NY": "New York"]
+let airportName = airports["NY"]
+print(airportName)
+
+
+
+var magazines = ["I": "IdN", "M": "Milk", "T": "The Little Things"]
+let myFavoriteMagazine = magazines["I"]
+print(myFavoriteMagazine)
