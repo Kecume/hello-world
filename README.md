@@ -467,6 +467,40 @@ if box1 == box2 {
 
 
 
+var airports: [String: String] = ["TOR": "Toronto", "NY": "New York"]
+print(airports)
+
+var kecumeArt: [Int: String] = [1: "Robot", 2: "Stranger"]
+print(kecumeArt)
+
+var month: [String: String] = ["Apr": "April", "Feb": "Febrary"]
+print(month)
+
+
+
+
+
+
+
+var airports = ["TOR": "Toronto", "NY": "New York"]
+print("\(airports.count)")
+airports["LHR"] = "London"
+print(airports)
+print("\(airports.count)")
+airports["TKO"] = "Tokyo"
+print(airports)
+print("There are \(airports.count) airports I have mentioned.")
+
+
+var bookshelf = String()
+if bookshelf.isEmpty {
+    print("My bookshlef has \(bookshelf.count) book.")
+}
+
+var suitcase = ["bag1": "Clothes", "bag2": "Shoes", "bag3": "Pants", "bag4": "Underware"]
+if !suitcase.isEmpty {
+    print("I have brought \(suitcase) and they are in my suitcase.")
+}
 
 
 
@@ -475,5 +509,23 @@ if box1 == box2 {
 
 
 
+
+
+var myExBoyfriend = [1: "Deng", 2: "Zhong", 3: "Gui", 4: "Zi"]
+let oldValue1 = myExBoyfriend.updateValue("Ming", forKey: 2)
+print(myExBoyfriend)
+
+
+
+var airports = ["TOR": "Toronto", "NY": "NY Airport"]
+print("Before: \(airports)")
+let oldValue2 = airports.updateValue("New York", forKey: "NY")
+print("After: \(airports)")
+
+
+var shoppingList = ["Ora": "Orange", "App": "Apple", "Che": "Cherry", "Wat": "Watermelon", "lem": "Lemon"]
+print("Before: \(shoppingList)")
+let oldvalue3 = shoppingList.updateValue("Cherries", forKey: "Che")
+print("After: \(shoppingList)")
 
 
