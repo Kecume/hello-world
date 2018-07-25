@@ -324,6 +324,8 @@ Union of the two sets will contain
 
 
 
+
+
 var basketLeft: Set = ["Apple", "Pear", "Orange", "Watermelon", "Peach"]
 var basketRight: Set = ["Orange", "Grape", "Cherries", "Apple"]
 
@@ -335,7 +337,20 @@ print("There are \(basketLeft.union(basketRight).sorted()) in the baskets.")
 
 print("Both baskets contains \(basketLeft.intersection(basketRight)), There have \(basketRight.symmetricDifference(basketLeft)) which the items the two baskets have not in commom.")
 
-print("\(basketLeft.subtract(basketRight))")  // ??????????????????????????????????????
+print("\(basketLeft.subtract(basketRight))") 🤷/* this turns out to be (), the reason is: when a.subtract(b), this will indicate that a minus b, a will change, in Swift, this will not return to a value directly, shoulb call subtract method first: 
+
+a.subtract(b)
+print(a)
+
+according to ubove statement:
+
+basketLeft.subtract(basketRight)
+print(basketLeft)
+*/
+🙆
+
+
+
 
 /*
 Set 1 contains [5, 7, 3, 1, 9]
@@ -410,6 +425,7 @@ print("Both baskets contains \(basketLeft.intersection(basketRight)), There have
 print(basketLeft.union(basketRight))
 
 print("\(basketRight.subtract(basketLeft))")  // ??????????????????????????????????????
+
 
 /*
 Set 1 contains [5, 7, 3, 1, 9]
@@ -580,3 +596,48 @@ if let removedValue = myExBoyfriend.removeValue(forKey: "Z") {
 } else {
     print("I don't know Zi.")
 }    
+
+
+
+
+
+
+
+
+var airports = ["TOR": "Toronto", "NY": "New York"]
+for airportCode in airports.keys {
+   print("Airport code: \(airportCode)")
+}
+ 
+for airportName in airports.values {
+   print("Airport name: \(airportName)")
+}
+
+
+
+var restaurant = ["TT": "Turtle Tower", "UB": "Umami Burger", "KC": "Kitchen", "TC": "The Creamy"]
+for restaurantCode in restaurant.keys {
+    print("Restaurant Code: \(restaurantCode)")
+}
+
+for restaurantName in restaurant.values {
+    print("Restaurant Name: \(restaurantName)")
+}
+
+
+
+var myBooks = ["I": "IdN", "M": "Milk", "C": "Ceal", "Y": "Yes"]
+for bookCode in myBooks.keys {
+    print("My book code: \(bookCode)")
+}
+for bookName in myBooks.values {
+    print("My book name: \(bookName)")
+}
+
+
+let array = ["apple", "apple", "orange"]
+let set = Set(array)
+print(set)
+
+
+
